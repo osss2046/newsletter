@@ -12,9 +12,9 @@ export const themeConfig: ThemeConfig = {
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
     i18nTitle: true, // true, false
     // author name
-    author: 'radishzz',
+    author: 'osss2046',
     // site url
-    url: 'https://retypeset.radishzz.cc',
+    url: 'https://www.solarislabs.dev',
     // base path
     // root directory for all pages and assets
     base: '/', // e.g., '/blog', '/docs'
@@ -58,10 +58,10 @@ export const themeConfig: ThemeConfig = {
   // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   global: {
     // default language
-    locale: 'zh', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
+    locale: 'en', // Cambia 'zh' a 'en'
     // more languages
     // not fill in the locale code above again, can be an empty array []
-    moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
+    moreLocales: ['es'], // Deja únicamente 'es' en este array
     // font styles for post text
     fontStyle: 'sans', // sans, serif
     // date format for posts
@@ -162,16 +162,12 @@ export const themeConfig: ThemeConfig = {
     // social links
     links: [
       {
-        name: 'RSS',
-        url: '/atom.xml', // or /rss.xml
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
+        name: 'WEBSITE',
+        url: 'https://www.solarislabs.dev', // or /rss.xml
       },
       {
         name: 'Email',
-        url: 'email@radishzz.cc',
+        url: 'oacuna@solarislabs.dev',
       },
       // {
       //   name: 'X',

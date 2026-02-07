@@ -12,9 +12,7 @@ const year = Number(startYear) === currentYear ? startYear : `${startYear}-${cur
 // i18n RSS Feed Path
 const currentLang = getLangFromPath(Astro.url.pathname)
 const links = socialLinks.map(({ name, url, ...rest }) => {
-  if (name === 'RSS') {
-    return { name, url: getLocalizedPath(url, currentLang), ...rest }
-  }
+
 
   if (name === 'Email') {
     return { name, url: url.startsWith('mailto:') ? url : `mailto:${url}`, ...rest }
@@ -33,7 +31,7 @@ const footerLinkClass = 'highlight-hover py-0.8 transition-colors after:bottom-0
   <p>
     {links.map((link, index) => (
       <>
-        <a class={footerLinkClass} href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a>&nbsp;{index < links.length - 1 && '/'}
+        <a class={footerLinkClass} href={link.url} target="_blank" rel="">{link.name}</a>&nbsp;{index < links.length - 1 && '/'}
       </>
     ))}
   </p>
@@ -42,7 +40,5 @@ const footerLinkClass = 'highlight-hover py-0.8 transition-colors after:bottom-0
     © {year} {author}
   </p>
 
-  <p>
-    Powered by <a class={footerLinkClass} href="https://astro.build/" target="_blank" rel="noopener noreferrer">Astro</a> and <a class={footerLinkClass} href="https://github.com/radishzzz/astro-theme-retypeset" target="_blank" rel="noopener noreferrer">Retypeset</a>
-  </p>
+ 
 </footer>
