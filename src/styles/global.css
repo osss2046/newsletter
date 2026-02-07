@@ -74,3 +74,9 @@ html.dark .code-copy-button.copy-success {
 .code-copy-button svg path {
   --at-apply: 'pointer-events-none';
 }
+
+.font-title {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-weight: 700; /* Negrita */
+  letter-spacing: -0.05rem; /* Un poco más juntas las letras para estilo de logo */
+}
